@@ -7,7 +7,7 @@ interface UserState {
   user: User | null;
 }
 
-const intialState: UserState = {
+const initialState: UserState = {
   user: null,
 };
 
@@ -17,7 +17,7 @@ interface UserAction {
 }
 
 export function userReducer(
-  state = intialState,
+  state = initialState,
   action: UserAction
 ): UserState {
   if (action.type === "user/login") {
